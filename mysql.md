@@ -30,3 +30,8 @@ FLUSH PRIVILEGES;
 mysql -u root -p dbhdc01 < /home/hdc.sql
 mysql -u root -p dbgastos01 < /home/antileoc_sergio.sql
 ```
+
+## Editar archivo de configuración de MySQL
+```
+sudo nano /etc/mysql/mysql.conf.d/mysqld.cnf
+```
