@@ -10,22 +10,37 @@ sudo systemctl restart postgresql
 sudo -u postgres psql
 ```
 
-## Crear usuarios
+## Consultar información de Postgres
 ```
-CREATE USER nuevousuario WITH PASSWORD 'definirpassword';
+SELECT datname FROM pg_database;
+
+SELECT usename FROM pg_user;
+
+SELECT rolname FROM pg_roles;
+
+SELECT rolname, rolsuper, rolcreaterole, rolcreatedb, rolcanlogin FROM pg_roles;
+
+SELECT rolname, rolsuper, rolcreaterole, rolcreatedb, rolcanlogin, rolreplication FROM pg_roles WHERE rolname = 'userkleplataforma';
 ```
 
-## Crear usuarios
+## Crear Base de Datos
 ```
-CREATE DATABASE nombrebasededatos OWNER nuevousuario;
+CREATE DATABASE nombredb;
+```
+
+## Crear usuario
+```
+CREATE USER nombreuser WITH ENCRYPTED PASSWORD 'password';
 ```
 
 ## Asignar privilegios a base de datos y usuario
 ```
-GRANT ALL PRIVILEGES ON DATABASE nombrebasededatos TO nuevousuario;
+GRANT ALL PRIVILEGES ON DATABASE dbchubb01 TO userkleplataforma;
+GRANT pg_read_all_data TO userkleplataforma;
+GRANT pg_write_all_data TO userkleplataforma;
 ```
 
-## Asignar privilegios a usuario para el squema public
+## Asignar privilegios a usuario para el squema public (No Necesario)
 ```
 GRANT ALL ON SCHEMA public TO nuevousuario;
 ```
