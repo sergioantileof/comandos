@@ -1,5 +1,10 @@
 # Comandos para admninistración de MySQL
 
+## Conectar a MySQL
+```
+sudo mysql -u root -p
+```
+
 ## Crear Usuario de MySQL
 ```
 CREATE USER 'userkleudev'@'localhost' IDENTIFIED BY 'JHJdlandOIOIDA34+-d';
