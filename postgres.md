@@ -57,6 +57,9 @@ sudo -u postgres psql nombrebasededatos < /home/nombrebasededatos.sql
 
 ## Exportar base de datos en Window 11 
 ```
+cd C:\Program Files\PostgreSQL\18\bin
+```
+```
 pg_dump -U postgres -d badededatos -f E:\Respaldo_SQL\Postgres\2026\03\20\nombre.sql
 ```
 
