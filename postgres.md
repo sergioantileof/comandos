@@ -55,6 +55,11 @@ psql -h localhost -U nuevousuario -d nombrebasededatos
 sudo -u postgres psql nombrebasededatos < /home/nombrebasededatos.sql
 ```
 
+## Exportar base de datos en Window 11 
+```
+pg_dump -U postgres -d badededatos -f E:\Respaldo_SQL\Postgres\2026\03\20\nombre.sql
+```
+
 ## Eliminar base de datos 
 ```
 sudo -u postgres dropdb 'dbchubb01'
