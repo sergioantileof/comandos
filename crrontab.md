@@ -52,3 +52,29 @@ sudo supervisorctl reread
 ```
 sudo supervisorctl update
 ```
+
+# Sintaxis de Crontab:
+
+## La estructura consiste en cinco campos de tiempo seguidos por el comando: m h dom mon dow comando 
+```
+m: Minuto (0-59).
+h: Hora (0-23).
+dom: Día del mes (1-31).
+mon: Mes (1-12).
+dow: Día de la semana (0-7, donde 0 y 7 son domingo). 
+```
+
+## Comandos útiles:
+```
+crontab -e: Editar el archivo crontab del usuario.
+crontab -l: Listar las tareas programadas.
+crontab -r: Eliminar todas las tareas del usuario. 
+```
+
+## Caracteres Especiales y Atajos:
+```
+*: Asterisco, significa "todos" los valores para ese campo.
+,: Coma, separa valores individuales.
+-: Guion, define un rango de tiempo.
+/: Diagonal, expresa valores de paso (ej. */10 cada 10 min).
+```
