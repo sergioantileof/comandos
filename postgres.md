@@ -84,4 +84,16 @@ ALTER DATABASE dbchubb01 WITH ALLOW_CONNECTIONS = false;
 ALTER DATABASE dbchubb01 WITH ALLOW_CONNECTIONS = true;
 ```
 
-
+# Administración Postgres en Window
+## Ruta a binario de Postgres
+```
+C:\Program Files\PostgreSQL\18\bin>
+```
+## Importar base de datos
+```
+psql -h localhost -U postgres -d dbchubb01 -f "D:\DESARROLLO\RESPALDOS_DB\2026\03\06\dbchubb01.sql"
+```
+## Exportar base de datos
+```
+pg_dump -U postgres -d dbchubb01 -f  "D:\DESARROLLO\RESPALDOS_DB\2026\03\06\dbchubb01V3.sql"
+```
