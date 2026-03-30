@@ -68,6 +68,10 @@ sudo supervisorctl reread
 ```
 sudo supervisorctl update
 ```
+## Activar proceso:
+```
+sudo supervisorctl restart laravel-worker-plataforma-reverb:*
+```
 
 # Sintaxis de Crontab:
 
