@@ -43,6 +43,22 @@ redirect_stderr=true
 stdout_logfile=/var/www/kleudev/storage/logs/worker.log
 ```
 
+```
+[program:laravel-worker-plataforma-reverb]
+process_name =%(program_name)s_%(process_num)02d
+command =php /var/www/plataforma/artisan reverb:start
+autostart = true
+autorestart = true
+stopasgroup = true
+killasgroup = true
+user =www-data
+numprocs = 1
+redirect_stderr = true
+stdout_logfile =/var/www/plataforma/reverb.log
+```
+
+
+
 ## Recargar:
 ```
 sudo supervisorctl reread 
