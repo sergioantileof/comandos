@@ -1,5 +1,10 @@
 # Comandos administración Supervisor de procesos
 
+## Verificar estado
+```
+sudo supervisorctl status
+```
+
 ## Recarga
 ```
 sudo supervisorctl reread
