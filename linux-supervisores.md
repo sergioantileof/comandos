@@ -5,6 +5,16 @@
 sudo supervisorctl status
 ```
 
+## Detener Supervisor
+```
+sudo systemctl stop supervisor
+```
+
+## Iniciar Supervisor
+```
+sudo systemctl start supervisor
+```
+
 ## Recarga
 ```
 sudo supervisorctl reread
@@ -26,6 +36,7 @@ sudo supervisorctl start laravel-worker:*
 ```
 laravel-worker-plataforma.conf
 ```
+
 ```
 sudo supervisorctl start laravel-worker-plataforma:*
 ```
@@ -35,16 +46,15 @@ laravel-worker-plataforma-reverb.conf
 ```
 ```
 sudo supervisorctl start laravel-worker-plataforma-reverb:*
-``
+```
 
-## Kleudev
+## Trabajos de KLEUDEV
 ```
 laravel-worker-reverb.conf
 ```
 ```
 sudo supervisorctl start laravel-worker-reverb:*
-``
-
+```
 ```
 laravel-worker.conf
 ```
@@ -52,7 +62,7 @@ laravel-worker.conf
 sudo supervisorctl start laravel-worker:*
 ```
 
-## Kleupos
+## Trabajos de KLEUPOS
 ```
 laravel-worker-kleupos.conf
 ```
