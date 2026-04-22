@@ -15,6 +15,11 @@ sudo systemctl stop supervisor
 sudo systemctl start supervisor
 ```
 
+## Reiniciar Todo
+```
+sudo supervisorctl restart all
+```
+
 ## Recarga
 ```
 sudo supervisorctl reread
