@@ -10,6 +10,6 @@ sudo -i -u postgres pg_dump dbconsorcio01  > /home/dbconsorcio01.sql
 sudo -i -u postgres pg_dump dbgastos01  > /home/dbgastos01.sql
 ```
 ```
-sudo -i -u postgres pg_dump dbpymes01  > /home/dbconsorcio01.sql
+sudo -i -u postgres pg_dump dbpymes01  > /home/dbpymes01.sql
 ```
 
