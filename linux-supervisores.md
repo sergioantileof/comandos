@@ -1,5 +1,10 @@
 # Comandos administración Supervisor de procesos
 
+## Ruta de los archivos de configuración
+```
+cd /etc/supervisor/conf.d/
+```
+
 ## Verificar estado
 ```
 sudo supervisorctl status
@@ -30,47 +35,25 @@ sudo supervisorctl reread
 sudo supervisorctl update
 ```
 
-## Iniciar procesos
-```
-sudo supervisorctl start laravel-worker:*
-```
-
 # Procesos configurador
 
-## Plataforma
+## PLATAFORMA
 ```
-laravel-worker-plataforma.conf
-```
-
-```
-sudo supervisorctl start laravel-worker-plataforma:*
-```
-
-```
-laravel-worker-plataforma-reverb.conf
+sudo nano /etc/supervisor/conf.d/plataforma-reverb.conf
 ```
 ```
-sudo supervisorctl start laravel-worker-plataforma-reverb:*
+sudo nano /etc/supervisor/conf.d/plataforma-queue.conf
 ```
 
-## Trabajos de KLEUDEV
+## KLEUDEV
 ```
-laravel-worker-reverb.conf
-```
-```
-sudo supervisorctl start laravel-worker-reverb:*
+sudo nano /etc/supervisor/conf.d/kleudev-reverb.conf
 ```
 ```
-laravel-worker.conf
-```
-```
-sudo supervisorctl start laravel-worker:*
+sudo nano /etc/supervisor/conf.d/kleudev-queue.conf
 ```
 
-## Trabajos de KLEUPOS
+## KLEUPOS
 ```
-laravel-worker-kleupos.conf
-```
-```
-sudo supervisorctl start laravel-worker-kleupos:*
+sudo nano /etc/supervisor/conf.d/kleupos-queue.conf
 ```
