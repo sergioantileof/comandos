@@ -10,6 +10,12 @@ sudo systemctl restart postgresql
 sudo -u postgres psql
 ```
 
+## Generar respaldo en Ubuntu
+
+```
+sudo -u postgres pg_dump dbplataforma01 > dbpymes01.sql
+```
+
 ## Consultar información de Postgres
 ```
 SELECT datname FROM pg_database;
