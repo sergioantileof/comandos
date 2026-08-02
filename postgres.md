@@ -13,7 +13,7 @@ sudo -u postgres psql
 ## Generar respaldo en Ubuntu
 
 ```
-sudo -u postgres pg_dump dbplataforma01 > dbpymes01.sql
+sudo -u postgres pg_dump dbplataforma01 > /home/dbpymes01.sql
 ```
 
 ## Consultar información de Postgres
