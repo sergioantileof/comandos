@@ -1,6 +1,6 @@
-## Comandos para adiministración de Artisan en Laravel
+# Comandos para adiministración de Artisan en Laravel
 
-# Crear proyecto Laravel
+## Crear proyecto Laravel
 ```
 composer create-project laravel/laravel nombre-app
 ```
@@ -16,20 +16,20 @@ php artisan config:cache
 ```
 
 
-## Migraciones
+# Migraciones
 
-# Crear tabla
+## Crear tabla
 
 ```
 php artisan make:migration create_nombre_tabla_table
 ```
-# Agregar campo a tabla
+## Agregar campo a tabla
 
 ```
 php artisan make:migration add_telefono_to_clientes_table --table=clientes
 ```
 
-# Ejecutarr migración
+## Ejecutarr migración
 
 ```
 php artisan migrate
