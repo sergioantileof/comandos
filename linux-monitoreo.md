@@ -17,3 +17,11 @@ htop
 ```
 top
 ```
+
+# Visualizar espacio que ocupan los direcporios
+```
+sudo du -sh /* 2> /dev/null
+```
+```
+sudo du -sh /var/www/* 2> /dev/null
+```
